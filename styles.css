@@ -172,6 +172,16 @@ body {
     align-items: center;
 }
 
+/* Profile Photo Styles */
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
 .profile-placeholder {
     width: 300px;
     height: 300px;
@@ -297,8 +307,17 @@ section {
 .project-content h3 {
     font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     color: #1f2937;
+}
+
+/* Project Date */
+.project-date {
+    display: block;
+    color: #6b7280;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
 }
 
 .project-content p {
@@ -424,6 +443,14 @@ section {
 .period {
     color: #6b7280;
     font-size: 0.875rem;
+}
+
+/* Timeline Location */
+.location {
+    display: block;
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
 }
 
 .timeline-content p {
@@ -562,6 +589,55 @@ section {
 }
 
 .skill-item span {
+    font-weight: 500;
+    color: #374151;
+}
+
+/* Certifications Section */
+.certifications {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid #e5e7eb;
+}
+
+.certifications-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.certifications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.certification-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certification-item i {
+    font-size: 1.5rem;
+    color: #2563eb;
+}
+
+.certification-item span {
     font-weight: 500;
     color: #374151;
 }
@@ -721,6 +797,11 @@ section {
         justify-content: center;
     }
 
+    .profile-photo {
+        width: 250px;
+        height: 250px;
+    }
+
     .about-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -765,6 +846,10 @@ section {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+
+    .certifications-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -785,5 +870,10 @@ section {
         width: 100%;
         max-width: 250px;
         text-align: center;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
     }
 }
