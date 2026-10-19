@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deeksha Bapura - Developer Portfolio</title>
+    <title>Deeksha Bapura - Software Engineer Portfolio</title>
+    <meta name="description" content="Deeksha Bapura, software engineer: full-stack, backend and cloud/DevOps projects, experience and contact.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -37,11 +38,11 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">Hi, I am Deeksha Bapura</h1>
-                <h2 class="hero-subtitle">Software Engineer | AI Systems, Full-Stack & Cloud-Native</h2>
+                <h2 class="hero-subtitle">Software Engineer | Full-Stack, Backend & Cloud/DevOps</h2>
                 <p class="hero-description">
-                    Software Engineer with expertise in building end-to-end AI systems, from scalable NLP pipelines and
-                    LLM-powered applications to full-stack platforms, DevOps automation, and cloud-native infrastructure
-                    across AWS, GCP, and production environments.
+                    Software Engineer who ships production full-stack and backend systems: React/TypeScript frontends,
+                    Python, Java and Node.js APIs, and the AWS infrastructure and CI/CD that run them. I work directly with
+                    clients to turn requirements into shipped software, with LLM-powered features where they add value.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -61,14 +62,15 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I am a Software Engineer and Computer Science graduate student at Indiana University with professional experience
-                        in full-stack development, NLP pipelines, LLM integration, and cloud-native systems. I currently contribute to
-                        Project 990, building AI-driven data systems for large-scale nonprofit financial analysis.
+                        I am a Software Engineer with an M.S. in Computer Science from Indiana University (May 2026). At Project 990 I
+                        work directly with nonprofit clients in weekly feedback sessions, shipping a funder-discovery platform
+                        (React/TypeScript, Flask, PostgreSQL on Amazon RDS) on AWS infrastructure I provisioned with Terraform and deploy
+                        through GitHub Actions.
                     </p>
                     <p>
-                        My expertise spans React.js, Node.js, Python, AWS, Kubernetes, and CI/CD pipelines, with hands-on experience
-                        deploying transformer-based models (BART, RoBERTa, LLaMA) and building RAG-powered applications. I enjoy
-                        solving complex engineering problems and delivering scalable solutions with real-world impact.
+                        Before that I spent over a year at Iron Mountain building a .NET/Angular document-digitization service and
+                        cloud delivery pipelines (Terraform, Kubernetes, Jenkins). I am looking for full-stack, backend, DevOps/cloud and
+                        forward-deployed engineering roles where I can own a system from requirements to production.
                     </p>
                     <div class="about-stats">
                         <div class="stat">
@@ -76,8 +78,8 @@
                             <p>Years Experience</p>
                         </div>
                         <div class="stat">
-                            <h3>6+</h3>
-                            <p>Major Projects</p>
+                            <h3>8</h3>
+                            <p>Projects Shipped</p>
                         </div>
                         <div class="stat">
                             <h3>3</h3>
@@ -103,24 +105,24 @@
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
-                            <i class="fas fa-trophy"></i>
+                            <i class="fas fa-satellite-dish"></i>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Luddy Score Stream – Scalable Real-Time Leaderboard & Analytics System</h3>
-                        <span class="project-date">April 2026</span>
-                        <p>Engineered a full-stack platform to streamline hackathon scoring with real-time leaderboard updates by building RESTful APIs using Node.js and Express for score ingestion, ranking, analytics, and history tracking, along with a React frontend supporting role-based access. Integrated statistical insights such as averages and performance gaps to enhance transparency and decision-making, delivering a complete end-to-end system within 24 hours.</p>
+                        <h3>Event-Driven Webhook Service</h3>
+                        <span class="project-date">September 2026</span>
+                        <p>Backend service that ingests meeting.started, meeting.transcript and meeting.ended webhooks, validates payloads, returns 202 Accepted immediately and processes asynchronously through Spring application events. Handles real-world delivery problems: idempotent de-duplication via database unique constraints, out-of-order and late-arriving chunks (ordered on read by sequence number), orphaned events, and isolated concurrent sessions. Covered by JUnit/Mockito unit tests and scripted edge-case scenarios.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">React.js</span>
-                            <span class="tech-tag">REST APIs</span>
-                            <span class="tech-tag">Real-Time Updates</span>
+                            <span class="tech-tag">Java 21</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Spring Data JPA</span>
+                            <span class="tech-tag">REST</span>
+                            <span class="tech-tag">Event-Driven</span>
+                            <span class="tech-tag">JUnit</span>
+                            <span class="tech-tag">Mockito</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://luddy-frontend.vercel.app/" class="project-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
-                            <a href="https://github.com/Deeksha-Bapura/luddy-backend" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> Backend</a>
-                            <a href="https://github.com/Deeksha-Bapura/luddy-frontend" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> Frontend</a>
+                            <a href="https://github.com/Deeksha-Bapura/soulside-webhook-service" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -133,10 +135,10 @@
                     </div>
                     <div class="project-content">
                         <h3>Git History Time Machine — Git Visualizer</h3>
-                        <span class="project-date">May 2026</span>
-                        <p>Built a developer tooling app that visualizes GitHub repository evolution using interactive D3.js commit timelines and contributor leaderboards. Analyzes 500+ commits per repository in real time and provides actionable insights on contributor activity and repository evolution.</p>
+                        <span class="project-date">June 2026</span>
+                        <p>Full-stack developer tooling app that visualizes GitHub repository evolution through interactive D3.js commit timelines and contributor leaderboards, analyzing 500+ commits per repository in real time. ASP.NET Core Web API with a PostgreSQL caching layer (Supabase) and an Angular 19 frontend, containerized with Docker and deployed through a GitHub Actions CI/CD pipeline to Render and Vercel.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">ASP.NET Core 10</span>
+                            <span class="tech-tag">ASP.NET Core</span>
                             <span class="tech-tag">Angular 19</span>
                             <span class="tech-tag">PostgreSQL</span>
                             <span class="tech-tag">Docker</span>
@@ -161,13 +163,15 @@
                     <div class="project-content">
                         <h3>Micro-Business Management Platform (LaunchIt)</h3>
                         <span class="project-date">March 2026</span>
-                        <p>Full-stack business management platform for micro-entrepreneurs with 6 integrated modules — Chat, Tracker, Report, Marketing, Compliance, and Documents. Features Claude API-powered AI assistant with sub-second response times, persistent conversation history, and a marketing engine with caption generation and content calendar tools.</p>
+                        <p>Full-stack platform that helps micro-entrepreneurs run their business legally and properly, with 6 integrated modules (Chat, Tracker, Report, Marketing, Compliance, Documents) and a guided onboarding flow. TypeScript monorepo with an Express 5 API, PostgreSQL via Drizzle ORM, an OpenAPI spec with generated Zod schemas and React Query hooks, server-side sessions stored in Postgres, and a guardrailed Claude assistant that returns structured output.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">React.js</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">React</span>
                             <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Drizzle ORM</span>
+                            <span class="tech-tag">OpenAPI</span>
                             <span class="tech-tag">Claude API</span>
                             <span class="tech-tag">Docker</span>
                             <span class="tech-tag">Render</span>
@@ -182,13 +186,38 @@
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Luddy Score Stream – Real-Time Leaderboard & Analytics</h3>
+                        <span class="project-date">April 2026</span>
+                        <p>Built in 24 hours: a full-stack hackathon scoring platform with RESTful APIs (Node.js, Express) for score ingestion, ranking, analytics and history tracking, plus a React frontend with role-based access. Surfaces statistical insights such as averages and performance gaps.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">Real-Time Updates</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://luddy-frontend.vercel.app/" class="project-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="https://github.com/Deeksha-Bapura/luddy-backend" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> Backend</a>
+                            <a href="https://github.com/Deeksha-Bapura/luddy-frontend" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> Frontend</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
                             <i class="fas fa-cloud"></i>
                         </div>
                     </div>
                     <div class="project-content">
                         <h3>Cloud Cost Intelligence</h3>
                         <span class="project-date">February 2026</span>
-                        <p>A full-stack cloud monitoring system designed to analyze and optimize cloud usage. Processes usage data to provide real-time cost insights, detect anomalies, and forecast future spending trends.</p>
+                        <p>Cloud monitoring system that analyzes usage data to provide cost insights, detect anomalies and forecast future spending trends.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Flask</span>
@@ -211,44 +240,23 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Personal Research Assistant with RAG</h3>
-                        <span class="project-date">Sept 2025</span>
-                        <p>Built a personal research assistant using Retrieval-Augmented Generation (RAG) with vector embeddings and Claude API, enabling contextual multi-document reasoning across 500+ documents with sub-second query response times. Supports PDF, DOCX, TXT, and Markdown with intelligent chunking and cosine similarity search.</p>
+                        <h3>Personal Research Assistant (RAG & Multi-Agent)</h3>
+                        <span class="project-date">September 2025</span>
+                        <p>LLM research assistant built in three stages: (1) RAG chat over uploaded PDF/DOCX/TXT/MD files with chunking, local embeddings and streamed answers; (2) a Claude tool-using agent that chooses between document search, web search and a human-review flag in a capped reasoning loop; (3) a four-agent pipeline (scraper, summarizer, fact-checker, synthesizer) streaming live progress to a React dashboard over Server-Sent Events.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
                             <span class="tech-tag">Claude API</span>
                             <span class="tech-tag">ChromaDB</span>
-                            <span class="tech-tag">Sentence Transformers</span>
-                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Pinecone</span>
+                            <span class="tech-tag">SSE</span>
+                            <span class="tech-tag">Docker</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/Deeksha-Bapura/personal-research-assistant" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>MindStat - Mental Health Analytics Platform</h3>
-                        <span class="project-date">Mar 2025 - Apr 2025</span>
-                        <p>Built a full-stack mental health analytics platform with user surveys and interactive data visualizations. Developed RESTful APIs for real-time user participation and data analysis with secure authentication and session management.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React.js</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Git</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Deeksha-Bapura/MindStat-frontend" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> Frontend</a>
-                            <a href="https://github.com/Deeksha-Bapura/MindStat-backend" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> Backend</a>
                         </div>
                     </div>
                 </div>
@@ -261,20 +269,48 @@
                     </div>
                     <div class="project-content">
                         <h3>CuraSure - Patient & Insurance Management System</h3>
-                        <span class="project-date">Feb 2025 - Apr 2025</span>
-                        <p>Full-stack Patient & Insurance Management System serving 3 user roles (patients, doctors, insurers) with JWT-based authentication, role-based access control, and 15+ RESTful APIs. Features an AI-powered chatbot for virtual symptom assessment, COVID-19 tracking, and real-time hospital bed management.</p>
+                        <span class="project-date">February 2025 - April 2025</span>
+                        <p>Healthcare platform with three role-based dashboards (patients, doctors, insurance providers) backed by 70+ route handlers. Layered security: password login, Duo two-factor authentication, JWT, Google OAuth, and Mongo-backed sessions for cross-site cookies. Includes appointment booking gated by a COVID screening questionnaire, insurance subscriptions and billing, hospital bed tracking, and real-time Socket.IO chat. Deployed with Docker on Render and Vercel.</p>
                         <div class="project-tech">
-                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
                             <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">Express</span>
                             <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Socket.IO</span>
+                            <span class="tech-tag">Duo 2FA</span>
                             <span class="tech-tag">JWT</span>
                             <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Socket.io</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/Deeksha-Bapura/Curasure-frontend" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> Frontend</a>
                             <a href="https://github.com/Deeksha-Bapura/Curasure-backend" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> Backend</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MindStat - Mental Health Analytics Platform</h3>
+                        <span class="project-date">March 2025 - April 2025</span>
+                        <p>Mental-health data platform where users register, submit a 20-question survey (full create/read/update/delete with per-user ownership checks) and explore seven dashboard charts. A Flask API with JWT auth uses MongoDB aggregation pipelines to return chart-ready data, loaded in parallel by a React and Chart.js frontend.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">JWT</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Deeksha-Bapura/MindStat-frontend" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> Frontend</a>
+                            <a href="https://github.com/Deeksha-Bapura/MindStat-backend" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> Backend</a>
                         </div>
                     </div>
                 </div>
@@ -287,37 +323,12 @@
                     </div>
                     <div class="project-content">
                         <h3>Virtual Keyboard Using Eye-Gaze Tracking</h3>
-                        <span class="project-date">Dec 2022 - Mar 2023</span>
-                        <p>A system designed to allow individuals with physical disabilities to control a keyboard using eye blinks as input. Created a virtual keyboard where keys are selected in the blink of an eye to provide means to communicate and interact with digital devices more independently and efficiently.</p>
+                        <span class="project-date">December 2022 - March 2023</span>
+                        <p>Accessibility system that lets people with physical disabilities control a virtual keyboard with eye blinks, giving them a way to communicate and use digital devices more independently.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Computer Vision</span>
                             <span class="tech-tag">Accessibility</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Luddy Score Stream – Scalable Real-Time Leaderboard & Analytics System</h3>
-                        <span class="project-date">April 2026</span>
-                        <p>Engineered a full-stack platform to streamline hackathon scoring with real-time leaderboard updates by building RESTful APIs using Node.js and Express for score ingestion, ranking, analytics, and history tracking, along with a React frontend supporting role-based access. Integrated statistical insights such as averages and performance gaps to enhance transparency and decision-making, delivering a complete end-to-end system within 24 hours.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">React.js</span>
-                            <span class="tech-tag">REST APIs</span>
-                            <span class="tech-tag">Real-Time Updates</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://luddy-frontend.vercel.app/" class="project-link" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
-                            <a href="https://github.com/Deeksha-Bapura/luddy-backend" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> Backend</a>
-                            <a href="https://github.com/Deeksha-Bapura/luddy-frontend" class="project-link" target="_blank" rel="noopener"><i class="fab fa-github"></i> Frontend</a>
                         </div>
                     </div>
                 </div>
@@ -341,9 +352,11 @@
                             <span class="location">Bloomington, IN</span>
                         </div>
                         <ul class="achievements">
-                            <li>Automated mission statement generation for 990-PF nonprofit records by deploying BERTopic across 127,450 long-text grant purposes, extracting 8 distinct funding topics with 0 outliers across 61,326 foundations, and feeding structured signals into a LLaMA-driven generation workflow to eliminate manual grant purpose curation at scale.</li>
-                            <li>Implemented and evaluated BART, RoBERTa, and Label2Vec on 135,000+ disability-keyword records, with Label2Vec identifying 24 granular disability categories with top labels achieving up to 40.9% match rate, enhancing automated data extraction and keyword validation workflows.</li>
-                            <li>Leveraged LLMs to auto-generate human-readable field descriptions for 16 metadata fields and validated observed max lengths across 13M+ grant records using pandas and Parquet, streamlining dataset documentation for the 990-PF data pipeline.</li>
+                            <li>Partnered directly with nonprofit clients in weekly feedback sessions to gather requirements and ship 40+ iterations of a funder-discovery platform (React/TypeScript, Flask API with JWT auth and per-user data isolation) covering 2.7k foundations.</li>
+                            <li>Migrated 7 tables and 9K+ records from SQLite to Amazon RDS (PostgreSQL) with zero data loss, verified by row-count checks.</li>
+                            <li>Architected production AWS infrastructure with Terraform (VPC, ALB, EC2; SSM-only access, IMDSv2, Secrets Manager) and automated CI/CD with GitHub Actions and OIDC authentication, cutting deployment time from 30+ minutes to under 3 minutes.</li>
+                            <li>Designed an LLM-driven grant curation workflow: BERTopic across 127K records extracted 8 funding themes that feed LLaMA prompts to automate curation of 61K foundations.</li>
+                            <li>Built an automated end-to-end test workflow in Make and Zapier for the client site's core functions, catching issues before client feedback sessions.</li>
                         </ul>
                     </div>
                 </div>
@@ -357,6 +370,7 @@
                             <span class="location">Bengaluru, India</span>
                         </div>
                         <ul class="achievements">
+                            <li>Built a full-stack document digitization service (Angular frontend, C#/.NET backend, OCR) and cut per-batch processing time from 25 to 8 minutes (68%) by parallelizing the processing pipeline.</li>
                             <li>Accelerated release cycles by automating CI/CD pipelines using Jenkins, Terraform, and Kubernetes across Linux-based environments, reducing deployment time by 70% and manual deployment steps by 55%, directly improving engineering throughput across enterprise data management workflows.</li>
                             <li>Owned end-to-end production deployment workflows for 3+ release cycles by integrating Docker containerization and Kubernetes orchestration, improving rollback efficiency by standardizing build and release processes across a distributed engineering team.</li>
                             <li>Improved production application stability across 3 Java modules by implementing a logging framework following OOP and SOLID principles, cutting debugging time by 50% and reallocating engineering hours toward feature development.</li>
@@ -417,6 +431,7 @@
                         <div class="skill-item"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
                         <div class="skill-item"><i class="fab fa-js-square"></i><span>TypeScript</span></div>
                         <div class="skill-item"><i class="fas fa-database"></i><span>SQL</span></div>
+                        <div class="skill-item"><i class="fas fa-code"></i><span>Go</span></div>
                         <div class="skill-item"><i class="fas fa-terminal"></i><span>Bash</span></div>
                         <div class="skill-item"><i class="fab fa-linux"></i><span>Linux</span></div>
                         <div class="skill-item"><i class="fab fa-windows"></i><span>Windows</span></div>
@@ -444,6 +459,7 @@
                         <div class="skill-item"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
                         <div class="skill-item"><i class="fas fa-database"></i><span>MongoDB</span></div>
                         <div class="skill-item"><i class="fas fa-database"></i><span>MySQL</span></div>
+                        <div class="skill-item"><i class="fas fa-database"></i><span>Redis</span></div>
                         <div class="skill-item"><i class="fas fa-database"></i><span>Neo4j</span></div>
                         <div class="skill-item"><i class="fas fa-snowflake"></i><span>Snowflake</span></div>
                         <div class="skill-item"><i class="fas fa-database"></i><span>ChromaDB</span></div>
@@ -460,6 +476,10 @@
                         <div class="skill-item"><i class="fas fa-dharmachakra"></i><span>Kubernetes</span></div>
                         <div class="skill-item"><i class="fas fa-cube"></i><span>Terraform</span></div>
                         <div class="skill-item"><i class="fas fa-code-branch"></i><span>Jenkins</span></div>
+                        <div class="skill-item"><i class="fas fa-dharmachakra"></i><span>Helm</span></div>
+                        <div class="skill-item"><i class="fas fa-cogs"></i><span>Ansible</span></div>
+                        <div class="skill-item"><i class="fas fa-chart-line"></i><span>Prometheus</span></div>
+                        <div class="skill-item"><i class="fas fa-chart-line"></i><span>CloudWatch</span></div>
                         <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
                         <div class="skill-item"><i class="fab fa-github"></i><span>GitHub Actions</span></div>
                         <div class="skill-item"><i class="fas fa-code-branch"></i><span>CI/CD</span></div>
@@ -472,6 +492,7 @@
                         <div class="skill-item"><i class="fas fa-network-wired"></i><span>Distributed Systems</span></div>
                         <div class="skill-item"><i class="fas fa-cubes"></i><span>Microservices</span></div>
                         <div class="skill-item"><i class="fas fa-exchange-alt"></i><span>REST APIs</span></div>
+                        <div class="skill-item"><i class="fas fa-bolt"></i><span>Webhooks & Event-Driven Architecture</span></div>
                         <div class="skill-item"><i class="fas fa-shield-alt"></i><span>Fault-Tolerant Systems</span></div>
                         <div class="skill-item"><i class="fas fa-brain"></i><span>NLP & LLMs</span></div>
                         <div class="skill-item"><i class="fas fa-search"></i><span>RAG Systems</span></div>
@@ -514,7 +535,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>Email</h4>
-                                <p>dbapura@iu.edu</p>
+                                <p>deeksha.bapura@gmail.com</p>
                             </div>
                         </div>
                         <div class="contact-method">
@@ -528,13 +549,13 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <h4>Location</h4>
-                                <p>Bloomington, IN</p>
+                                <p>New York, NY</p>
                             </div>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://linkedin.com/in/deeksha-bn" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/Deeksha-Bapura" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/deeksha-bn/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Deeksha-Bapura" class="social-link" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
 
